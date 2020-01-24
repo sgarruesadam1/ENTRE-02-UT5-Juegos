@@ -47,7 +47,7 @@ public class RevistaOnLineJuegos
      *    
      */
     public void add(Juego juego) {
-        String str = "";
+        
 
         if (estaCompleta()) {
             System.out.println("Lista completa");
@@ -189,8 +189,13 @@ public class RevistaOnLineJuegos
         {
             if(juegos[i].getGenero().equals(genero))
             {
-                juegos[i] = null;
+                for (int c = i; c < total; c++)
+                {
+                juegos[i] = juegos[i + 1];
+                
                 borra++;
+            }
+           total--;
             }
         }
 
