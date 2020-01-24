@@ -24,7 +24,7 @@ public class AppRevistaJuegosOnLine
 	    System.out.println("***************************************");
 	    System.out.println("");
 	    System.out.println("");
-	    System.out.println("Juegos con valoración media > 8.2");
+	    System.out.println("Juegos con valoración media > 8.2 ");
 	    
 	    StringBuilder sb = new StringBuilder();
 	    sb.append(" [");
